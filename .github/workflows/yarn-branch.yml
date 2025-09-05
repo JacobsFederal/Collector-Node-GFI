@@ -70,7 +70,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Use Node.js ${{ needs.Setup.outputs.v18 }}
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: ${{ needs.Setup.outputs.v18 }}
 
